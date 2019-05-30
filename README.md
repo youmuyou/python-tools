@@ -1,14 +1,20 @@
 # Python 小工具集合
 
+
+
+### FaceCheck
+
+基于 [face_recognition](https://github.com/ageitgey/face_recognition) 的人脸检测，检测到陌生人发邮件通知，可以通过脚本设置为开机启动或者定时启动，增强电脑安全性。
+
+更多见 [使用说明](https://github.com/gaoice/python-tools/blob/master/FaceCheck/README.md) 。
+
+
+
 ### ClipboardSync 
 
 局域网Windows系统剪切板同步工具。
 
-使用方法：
-
-使用pyinstaller或者其他打包工具，打包为exe形式。
-
-在配置文件中指定数据库地址和要使用的表名，软件会自动创建一张表，用来同步剪切板。
+通过在配置文件中指定数据库地址和要使用的表名，软件会自动创建一张表，用来同步剪切板。
 
 需要注意的是，在一个同步周期内，软件将会优先将本机的剪切板更改上传到数据库，在本机剪切板没有被更改的情况下才会同步远程（数据库）的剪切板内容到本机。
 
